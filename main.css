@@ -1,0 +1,36 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+.navbar {
+    background:transparent;
+    position: relative;
+}
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    max-width: 5cm;
+}
+.nav-link{
+    color: #fff;
+    cursor: pointer;
+    
+    
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: rgb(216, 208, 135);
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.img-fluid {
+    object-fit: cover;
+    position: absolute;
+    display:flex;
+    
+   
+}
