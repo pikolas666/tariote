@@ -98,4 +98,11 @@ body {
       .modal-footer{
         display:none;  
       }
+@media (max-width:600px)
+  { .row {
+    margin: 0px;
+    display:flex;
+    flex-direction: column;
+
+}}
   
