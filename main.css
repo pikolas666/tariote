@@ -88,7 +88,7 @@ a:active {
     gap: 10px 10px;
     margin: 30px 30px 30px;
     margin-right: 50px;
-    position: relative;
+    position: absolute;
     top: 165px;
 }
 
@@ -182,13 +182,16 @@ a:active {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: black;
+    z-index: 2;
   }
   
   .menu > li {
     margin: 0 1rem;
     overflow: hidden;
     cursor:pointer;
+    z-index: 3;
+    
  
   }
   
@@ -289,6 +292,7 @@ a:active {
   }
   .a:link {
     color:#E3B285;
+    background-color: transparent;
   }
   .aboutme {
     margin-top: 100px;
@@ -311,6 +315,8 @@ a:active {
     width: 100%;
     background-color: transparent;
     margin-bottom: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
     
   }
 .social img {
