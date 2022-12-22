@@ -286,3 +286,21 @@ a:active {
     font-family: Lucida Handwriting ;
     text-align: center;
   }
+  .social  {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+.social img {
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+
+}
