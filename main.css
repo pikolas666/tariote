@@ -285,6 +285,7 @@ a:active {
     justify-content: center;
     font-family: Lucida Handwriting ;
     text-align: center;
+    
   }
   .social  {
     display: flex;
@@ -294,6 +295,8 @@ a:active {
     position: absolute;
     bottom: 0;
     width: 100%;
+    background: transparent;
+    margin-bottom: 10px;
     
   }
 .social img {
