@@ -291,9 +291,11 @@ a:active {
     height: 30px;
     justify-content: center;
     align-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     
   }
-
 .social img {
     height: 30px;
     width: 30px;
