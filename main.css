@@ -16,28 +16,31 @@ body {
 }
 .navbar-all {
     background-color: transparent;
-    position: relative;
+    position: absolute;
     display: flex;
     padding-top: 5px;
     padding-left: 5px;
+    top: 5px;
   
    
 
  
 }
 a:link {
-    color:#ECC141;
+    color:#E3B285;
     text-decoration: none;
   }
   a:visited {
     text-decoration: none;
-    color:#ECC141;
+    color:#E3B285;
   }
 
 .navbar-brand {
     cursor: pointer;
     max-width: 6cm;
     background-color: transparent;
+    margin-top: -50px;
+    position: absolute;
 }
 a:hover {
     color: rgb(177, 131, 46);
@@ -47,7 +50,7 @@ a:active {
     color:rgb(177, 131, 46)
   }
 .nav-link{
-    color: #ECC141;
+    color: #E3B285;
     cursor: pointer;
     background-color: transparent;    
 }
@@ -85,6 +88,8 @@ a:active {
     gap: 10px 10px;
     margin: 30px 30px 30px;
     margin-right: 50px;
+    position: relative;
+    top: 165px;
 }
 
 .gallery img {
@@ -105,7 +110,7 @@ a:active {
         width: 100%;
         float: left;
         height: 2px;
-        background-color: #ECC141;
+        background-color: #E3B285;
         margin-bottom: 5px;
         }
 
@@ -163,9 +168,12 @@ a:active {
     justify-content: space-between;
     background-color: transparent;
     background: transparent;
-    color: #ECC141;
+    color: #E3B285;
     height: 120px;
     padding: 1em;
+    position: absolute;
+    width: 100%;
+    top: 5px
   }
   
   .menu {
@@ -174,6 +182,7 @@ a:active {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: transparent;
   }
   
   .menu > li {
@@ -201,7 +210,7 @@ a:active {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: #ECC141;
+    background-color: #E3B285;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -266,7 +275,7 @@ a:active {
       margin: 0;
       padding: 0.5em 0;
       width: 100%;
-      color: #ECC141;
+      color: #E3B285;
       background-color: transparent;
      
       
@@ -275,16 +284,21 @@ a:active {
       border-bottom: 1px solid #444;
     }
   }
+  .a {
+    background-color: transparent;
+  }
   .a:link {
-    color:#ECC141;
+    color:#E3B285;
   }
   .aboutme {
     margin-top: 100px;
     align-items: center;
-    color: #d3ac39;
+    color: #E3B285;
     justify-content: center;
     font-family: Lucida Handwriting ;
     text-align: center;
+    position: relative;
+    top: 120px;
     
   }
   .social  {
@@ -292,7 +306,7 @@ a:active {
     height: 30px;
     justify-content: center;
     align-content: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: transparent;
