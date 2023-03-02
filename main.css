@@ -139,6 +139,11 @@ a:active {
 .gallery img {
   width: 100%;
 }
+a:link {
+  color:#E3B285;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 20px;
  
 }
 
