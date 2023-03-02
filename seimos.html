@@ -43,25 +43,24 @@
 
 
 <div class="categories">
-<button class="catButton" onclick="window.location.href='galerija-gamta.html';">Gamta
+  <button class="catButton" onclick="window.location.href='galerija-gamta.html';">Gamta
 
-  <span class="first"></span>
-  <span class="second"></span>
-  <span class="third"></span>
-  <span class="fourth"></span>
-</button>
-<button class="catButton" onclick="window.location.href='seimos.html';">Šeimos
-  <span class="first"></span>
-  <span class="second"></span>
-  <span class="third"></span>
-  <span class="fourth"></span>
-</button>
-<button class="catButton" onclick="window.location.href='sventes.html';">Šventės
-  <span class="first"></span>
-  <span class="second"></span>
-  <span class="third"></span>
-  <span class="fourth"></span></button>
-
+    <span class="first"></span>
+    <span class="second"></span>
+    <span class="third"></span>
+    <span class="fourth"></span>
+  </button>
+  <button class="catButton" onclick="window.location.href='seimos.html';">Šeimos
+    <span class="first"></span>
+    <span class="second"></span>
+    <span class="third"></span>
+    <span class="fourth"></span>
+  </button>
+  <button class="catButton" onclick="window.location.href='sventes.html';">Šventės
+    <span class="first"></span>
+    <span class="second"></span>
+    <span class="third"></span>
+    <span class="fourth"></span></button>
 </div>
         <div class="gallery">
 
@@ -100,14 +99,14 @@
 
         // gamta gallery - add photo from folder automaticallly
 
-        $.getJSON('./pictures/gamta', data => {
+        $.getJSON('./pictures/seimos', data => {
                
                list = data;
                console.log(list) //["doc1.jpg", "doc2.jpg", "doc3.jpg"] 
                list.forEach(picture => {
                    const gallery = document.querySelector('.gallery');
                
-                   gallery.innerHTML += `<a href="pictures/gamta/${picture}"><img src="pictures/gamta/${picture}"></a>`
+                   gallery.innerHTML += `<a href="pictures/seimos/${picture}"><img src="pictures/seimos/${picture}"></a>`
                    
                })
            });

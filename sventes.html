@@ -40,34 +40,32 @@
 
     <!-- Page Content -->
    
+    <div class="categories">
+      <button class="catButton" onclick="window.location.href='galerija-gamta.html';">Gamta
 
-
-<div class="categories">
-<button class="catButton" onclick="window.location.href='galerija-gamta.html';">Gamta
-
-  <span class="first"></span>
-  <span class="second"></span>
-  <span class="third"></span>
-  <span class="fourth"></span>
-</button>
-<button class="catButton" onclick="window.location.href='seimos.html';">Šeimos
-  <span class="first"></span>
-  <span class="second"></span>
-  <span class="third"></span>
-  <span class="fourth"></span>
-</button>
-<button class="catButton" onclick="window.location.href='sventes.html';">Šventės
-  <span class="first"></span>
-  <span class="second"></span>
-  <span class="third"></span>
-  <span class="fourth"></span></button>
-
-</div>
-        <div class="gallery">
-
-          
-           
-       </div>
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+        <span class="fourth"></span>
+      </button>
+      <button class="catButton" onclick="window.location.href='seimos.html';">Šeimos
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+        <span class="fourth"></span>
+      </button>
+      <button class="catButton" onclick="window.location.href='sventes.html';">Šventės
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+        <span class="fourth"></span></button>
+      
+      </div>
+              <div class="gallery">
+      
+                
+                 
+             </div>
        
        <div class="social">
         <a href="https://www.facebook.com"><img class="facebook"src="pictures/F.png"></a>
@@ -100,14 +98,14 @@
 
         // gamta gallery - add photo from folder automaticallly
 
-        $.getJSON('./pictures/gamta', data => {
+        $.getJSON('./pictures/sventes', data => {
                
                list = data;
                console.log(list) //["doc1.jpg", "doc2.jpg", "doc3.jpg"] 
                list.forEach(picture => {
                    const gallery = document.querySelector('.gallery');
                
-                   gallery.innerHTML += `<a href="pictures/gamta/${picture}"><img src="pictures/gamta/${picture}"></a>`
+                   gallery.innerHTML += `<a href="pictures/sventes/${picture}"><img src="pictures/sventes/${picture}"></a>`
                    
                })
            });
